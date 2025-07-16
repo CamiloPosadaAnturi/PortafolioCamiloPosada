@@ -1,0 +1,116 @@
+:root {
+      --color-primario: #3b82f6;
+      --color-secundario: #2563eb;
+      --color-fondo: #1f2937;
+      --color-texto: #f0f0f0;
+      --color-titulo: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--color-fondo);
+      color: var(--color-texto);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .contenedorfoto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-principal {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      border-radius: 12px;
+      background-color: #111827;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      
+    }
+
+    .perfil {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: auto;
+      box-shadow: 0 0 20px var(--color-primario);
+      margin-bottom: 20px;
+    }
+
+    .nombreCompleto {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 2.5rem;
+      color: var(--color-titulo);
+    }
+
+    .profesion {
+      font-size: 1.2rem;
+      color: #9ca3af;
+      margin-bottom: 30px;
+    }
+
+    .datos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .datos a {
+      background-color: var(--color-primario);
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .datos a:hover {
+      background-color: var(--color-secundario);
+    }
+
+    .seccion {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .seccion h2 {
+      font-family: 'Fredoka', sans-serif;
+      font-size: 1.5rem;
+      color: var(--color-titulo);
+      margin-bottom: 10px;
+    }
+
+    .seccion p, .seccion ul {
+      font-size: 1rem;
+      padding-left: 10px;
+    }
+
+    .seccion ul {
+      list-style: disc;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .contenedor-principal {
+        padding: 20px;
+      }
+      .nombreCompleto {
+        font-size: 1.8rem;
+      }
+    }
